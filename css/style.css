@@ -118,13 +118,18 @@ body, html{
 
 	.profile {
 		display: flex;
-		width: 100%;
-		flex-flow:column wrap;
+		width: 80%;
+		flex-flow:row wrap;
 		justify-content: space-between;
 	}
 
 	.menu-login {
-		width: 75%;
+		width: 100%;
+	}
+
+	.profile__item {
+		flex-basis: 20%;
+		flex-grow: 1;
 	}
 
 	.profile__item, .addPerfil {
@@ -141,9 +146,9 @@ body, html{
 		font-size: 50%;
 	}
 
-	.profile__logo {
-		width: 25%;
-		height: 25%;
+	.profile__logo , .addPerfil{
+		width: 120px;
+		height: 120px;
 	}
 
 	.header-perfil__title {
