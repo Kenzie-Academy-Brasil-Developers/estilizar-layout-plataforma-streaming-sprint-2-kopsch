@@ -53,17 +53,16 @@ body, html{
 .menu-login {
 	display: flex;
 	width: 858px;
-	flex-direction: column;			
+	flex-flow: column wrap;		
 	justify-content: center;
 	align-items: center;
 }
 
 .profile {
+	width: 100%;
+	justify-content: space-around;
 	display: flex;
-	display: flex;
-		flex-flow: row;
-		justify-content: space-between;
-	justify-content: center;
+	flex-flow: row;
 	align-items: center;		
 	text-align: center;	
 	padding-top: 20px;
@@ -75,9 +74,6 @@ body, html{
 	height: 186px;
 }
 
-.profile__item, .addPerfil {
-	margin-right: 30px;
-} 
 
 .profile__name, .profile__sign {
 	display: flex;
@@ -122,8 +118,13 @@ body, html{
 
 	.profile {
 		display: flex;
-		flex-flow: row wrap;
+		width: 100%;
+		flex-flow:column wrap;
 		justify-content: space-between;
+	}
+
+	.menu-login {
+		width: 75%;
 	}
 
 	.profile__item, .addPerfil {
@@ -152,7 +153,8 @@ body, html{
 	}
 	
 	.btn {
-		font-size: 75%;
+		font-size: 50%;
+		margin-top: 25%
 	}
 
 }
