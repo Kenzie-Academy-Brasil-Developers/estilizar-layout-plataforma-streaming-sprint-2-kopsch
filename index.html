@@ -9,8 +9,9 @@
 	<title>Netflix</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css" />
-
+	
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> 
 </head>
@@ -19,67 +20,62 @@
 	<!-- CABEÇALHO -->
 	<header class="topo">
 		<figure>
-			<img src="img/logo.svg" alt="Netflix">
-			<figcaption>Netflix</figcaption>
+			<img class="topo-img" src="img/logo.svg" alt="Netflix">
 		</figure>
 	</header>
 
 	<!-- PÁGINA INICIAL -->
 	<div class="pg-home">
 		
-		<section>
+		<section class = "menu-login">
 
-			<header>
-				<h2>Quem está assistindo?</h2>
+			<header class = "header-perfil">
+				<h2 class = "header-perfil__title">Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="profile">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
-						<figcaption>Gabriel</figcaption>
+				<li class="profile__item">
+					<figure >
+						<img class="profile__logo" src="img/avatar.png" alt="Gabriel">
 					</figure>
 
-					<h3>Gabriel</h3>
+					<h3 class="profile__name">Gabriel</h3>
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
-					<figure>
-						<img src="img/avatar1.png" alt="Maria">
-						<figcaption>Maria</figcaption>
+				<li class="profile__item">
+					<figure >
+						<img class="profile__logo" src="img/avatar1.png" alt="Maria">
 					</figure>
 
-					<h3>Maria</h3>
+					<h3 class="profile__name">Maria</h3>
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
-					<figure>
-						<img src="img/avatar2.png" alt="Renato">
-						<figcaption>Renato</figcaption>
+				<li class="profile__item">
+					<figure >
+						<img class="profile__logo" src="img/avatar2.png" alt="Renato" >
 					</figure>
 
-					<h3>Renato</h3>
+					<h3 class="profile__name">Renato</h3>
 				</li>
 
 				<!-- ADICIONAR PERFIL-->
 				<li class="addPerfil">
 					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
-						<figcaption>Adicionar perfil</figcaption>
+						<img class="profile__logo" src="img/plus-sign.png" alt="Adicionar perfil">
 					</figure>
 
-					<h3>Adicionar perfil</h3>
+					<h3 class="profile__sign">Adicionar perfil</h3>
 				</li>
 
 			</ul>
 
 			<footer>
-				<button>Gerenciar Perfis</button>
+				<button class= "btn">Gerenciar Perfis</button>
 			</footer>
 
 		</section>
